@@ -1,0 +1,155 @@
+/* Colores principales */
+:root {
+    --bordo: #800020;
+    --bordo-oscuro: #5c0014;
+    --blanco: #ffffff;
+    --gris-claro: #f8f9fa;
+}
+
+/* Configuración de fuentes y estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bordo);
+    color: var(--blanco);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--blanco);
+    text-align: center;
+}
+
+p, .card-text {
+    color: var(--gris-claro);
+}
+
+/* Estilos de la Navegación */
+.navbar {
+    background-color: var(--bordo-oscuro);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--blanco) !important;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--bordo);
+    border-radius: 5px;
+}
+
+/* Sección de Bienvenida */
+header {
+    background-color: var(--bordo-oscuro);
+    padding: 2rem 0;
+}
+
+header p {
+    color: var(--gris-claro);
+    font-size: 1.1rem;
+}
+
+/* Estilos de la Galería */
+.gallery .card {
+    background-color: var(--bordo-oscuro);
+    border: none;
+    transition: transform 0.3s;
+}
+
+.gallery .card:hover {
+    transform: scale(1.05);
+}
+
+.gallery .card-img-top {
+    border-radius: 5px;
+}
+
+.gallery .card-title {
+    color: var(--blanco);
+    font-size: 1.25rem;
+}
+
+.gallery .btn-primary {
+    background-color: var(--bordo);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.gallery .btn-primary:hover {
+    background-color: var(--bordo-oscuro);
+}
+
+/* Botones de Filtro en la Galería */
+.filter-button {
+    color: var(--blanco);
+    border-color: var(--blanco);
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.filter-button:hover {
+    background-color: var(--blanco);
+    color: var(--bordo);
+}
+
+/* Sección del Mapa */
+#mapa {
+    background-color: var(--bordo-oscuro);
+    padding: 2rem 0;
+    color: var(--gris-claro);
+}
+
+/* Pie de Página */
+.footer {
+    background-color: var(--bordo-oscuro);
+    padding: 1.5rem 0;
+    color: var(--gris-claro);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--gris-claro);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .footer a {
+        font-size: 1.2rem;
+    }
+}
+#mission-vision h3 {
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+#mission-vision p {
+    color: var(--gris-claro);
+    font-size: 1rem;
+}
